@@ -1,0 +1,44 @@
+body {
+    background-color: black;
+    color: #00FF00;
+    font-family: monospace;
+    padding: 20px;
+    margin: 0;
+    overflow: hidden;
+}
+
+#boot-screen, #logo {
+    white-space: pre;
+    line-height: 1.3;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+
+.hidden { opacity: 0; }
+
+#logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.glow {
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+#input {
+    width: 95%;
+    display: inline-block;
+}
+
+@-webkit-keyframes glow {
+    from {
+        text-shadow: 0 0 10px #b4ffb4, 0 0 20px #37ff37, 0 0 30px #00e608, 0 0 40px #00e608, 0 0 50px #00e63d, 0 0 60px #00e63d, 0 0 70px #00e63d;
+    }
+    to {
+        text-shadow: 0 0 20px #b4ffb4, 0 0 30px #37ff37, 0 0 40px #37ff37, 0 0 50px #37ff37, 0 0 60px #37ff37, 0 0 70px #37ff37, 0 0 80px #37ff37;
+    }
+}
