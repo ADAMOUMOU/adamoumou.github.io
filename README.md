@@ -1,1 +1,0 @@
-# adamoumou.github.io
