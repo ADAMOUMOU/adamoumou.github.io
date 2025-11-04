@@ -68,9 +68,9 @@ const customLinks = [
         size: "22 repos"
     },
     { 
-        url: "mailto:adamouch@adamouch.dev", 
+        url: "lenfant.dev", 
         type: "file",
-        description: "adamouch@adamouch.dev",
+        description: "lenfant.dev",
         size: "10 ko"
     }
 ];
@@ -229,7 +229,7 @@ function startInteractiveTerminal() {
             const output = document.getElementById('output');
             
             output.innerHTML += `<div>$ ${cmd}</div>`;
-            output.innerHTML += `<div>${commands[cmd] || "Commande inconnue"}</div>`;
+            output.innerHTML += `<div>${commands[cmd] || "Unhandled command"}</div>`;
             
             if (cmd === 'reboot') {
                 setTimeout(() => {
@@ -262,4 +262,5 @@ window.onload = function() {
         typeWriter();
         
     }, 1000);
+
 };
